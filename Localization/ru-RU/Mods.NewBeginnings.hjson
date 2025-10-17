@@ -3,7 +3,12 @@ Projectiles: {
 	KylieProjectile.DisplayName: Бумеранг Кайли
 }
 
-MrPlaguesCompatLine: Нажмите здесь, чтобы открыть меню New Beginnings!
+# This line is used for all crossmod fixes, which includes, so far: Mr Plague's Custom Races, One Piece Mod
+MrPlaguesCompatLine:
+	'''
+	Нажмите здесь или комбинацию CTRL+O,
+	 чтобы открыть меню New Beginnings!
+	'''
 # The space in the below key is intentional. If you're translating to a language with spaces, keep it.
 TitleLine: " [c/8B8B8B: {0}]"
 
@@ -29,24 +34,32 @@ Configs: {
 				В режиме «Относительное» максимальное возможное здоровье персонажа будет равно изначальному запасу здоровья × 4
 				'''
 		}
+	}
+
+	Scaling: {
+		Tooltip: ""
+		Scaled.Label: стандарт
+		Flat.Label: фиксированное
+		Relative.Label: относительное
+	}
+
+	NewBeginningsClientConfig: {
+		DisplayName: Клиентская конфигурация New Beginnings
 
 		MrPlaguesButtonOffsetY: {
 			Label: Смещение клавиши совместимости
 			Tooltip:
 				'''
-				При использовании мода MrPlague's Authentic Races под меню создания персонажа появляется кнопка для открытия меню New Beginnings
-				Эта настройка определяет вертикальное смещение кнопки относительно центра экрана
-				По умолчанию значение равно 300 и ограничено центром и нижней границей экрана
+				При использовании модов MrPlague's Authentic Races и One Piece Mod, 
+				под меню создания персонажа появляется кнопка для открытия меню New Beginnings.
+				Эта настройка определяет вертикальное смещение кнопки относительно центра экрана.
+				По умолчанию значение равно 300 и ограничено центром и нижней границей экрана.
 				'''
 		}
-	}
 
-	Scaling: {
-		Tooltip: ""
-		Scaled.Label: Стандарт
-		Flat.Label: Фиксированное
-		Relative.Label: Относительное
+		HidePlayerOrigins: {
+			Label: Скрыть отображение происхождения персонажей
+			Tooltip: ""
+		}
 	}
 }
-
-
